@@ -45,16 +45,16 @@ int main() {
 
     // Cadastro das Cartas:
     //Carta1
-    // printf("Insira as informações para a primeira carta: \n");
+    printf("Insira as informações para a primeira carta: \n");
 
-    // printf("\nDigite uma letra de 'A' a 'H' para o código da carta: ");
-    // scanf(" %s", codPais1);
+    printf("\nDigite uma letra de 'A' a 'H' para o código da carta: ");
+    scanf(" %s", codPais1);
 
-    // printf("\nDigite um número de '01' a '04' para o código da carta: ");
-    // scanf(" %s", numCodPais1);
+    printf("\nDigite um número de '01' a '04' para o código da carta: ");
+    scanf(" %s", numCodPais1);
 
-    // // printf("\nDigite um Estado(UF): ");
-    // // scanf(" %49[^\n]", estado1);
+    // printf("\nDigite um Estado(UF): ");
+    // scanf(" %49[^\n]", estado1);
      
     printf("\nDigite o nome do país: ");
     scanf(" %49[^\n]", nomePais1);   
@@ -62,33 +62,33 @@ int main() {
     printf("\nDigite a população do país: ");
     scanf("%lu", &populacao1);  
 
-    // printf("\nDigite a área do país: ");
-    // scanf(" %f", &area1);
+    printf("\nDigite a área do país: ");
+    scanf(" %f", &area1);
 
-    // printf("\nDigite o PIB do país: ");
-    // scanf(" %f", &pib1);
+    printf("\nDigite o PIB do país: ");
+    scanf(" %f", &pib1);
 
-    // printf("\nDigite o número de pontos turísticos do país: ");
-    // scanf(" %d", &numPontosTuristicos1);
+    printf("\nDigite o número de pontos turísticos do país: ");
+    scanf(" %d", &numPontosTuristicos1);
 
     //Calcula densidade populacional da Pais
     densidadePopulacional1 = (float)populacao1 / area1;
 
-    // //Calcula Pib per Capta da Pais
-    // pibPerCapta1 = ((float)populacao1 / pib1);
+    //Calcula Pib per Capta da Pais
+    pibPerCapta1 = ((float)populacao1 / pib1);
 
     // //Carta2
-    // printf("\n---------------------------------------------------------\n");            // Separador
-    // printf("\nInsira as informações para a segunda carta: \n");
+    printf("\n---------------------------------------------------------\n");            // Separador
+    printf("\nInsira as informações para a segunda carta: \n");
 
-    // printf("\nDigite uma letra de 'A' a 'H' para o código da carta: ");
-    // scanf(" %s", codPais2);
+    printf("\nDigite uma letra de 'A' a 'H' para o código da carta: ");
+    scanf(" %s", codPais2);
         
-    // printf("\nDigite um número de '01' a '04' para o código da carta: ");
-    // scanf(" %s", numCodPais2);
+    printf("\nDigite um número de '01' a '04' para o código da carta: ");
+    scanf(" %s", numCodPais2);
 
-    // // printf("\nDigite uma Estado(UF): ");
-    // // scanf(" %49[^\n]", estado2);
+    // printf("\nDigite uma Estado(UF): ");
+    // scanf(" %49[^\n]", estado2);
 
     printf("\nDigite o nome do país: ");
     scanf(" %49[^\n]", nomePais2);   
@@ -96,20 +96,20 @@ int main() {
     printf("\nDigite a população do país: ");
     scanf("%lu", &populacao2);  
 
-    // printf("\nDigite a área do país: ");
-    // scanf(" %f", &area2);
+    printf("\nDigite a área do país: ");
+    scanf(" %f", &area2);
 
-    // printf("\nDigite o PIB do país: ");
-    // scanf(" %f", &pib2);
+    printf("\nDigite o PIB do país: ");
+    scanf(" %f", &pib2);
 
-    // printf("\nDigite o número de pontos turísticos do país:: ");
-    // scanf(" %d", &numPontosTuristicos2);
+    printf("\nDigite o número de pontos turísticos do país: ");
+    scanf(" %d", &numPontosTuristicos2);
 
-    //Calcula densidade populacional da Pais
+    // Calcula densidade populacional da Pais
     densidadePopulacional2 = (float)populacao2 / area2;
 
-    // //Calcula Pib per Capta da Pais
-    // pibPerCapta2 = ((float)populacao2 / pib2);
+    //Calcula Pib per Capta da Pais
+    pibPerCapta2 = ((float)populacao2 / pib2);
     
     //Soma dos atributos numéricos para super poder
     // superPoderCarta1 = (float)populacao1 + area1 + pib1 + (float)numPontosTuristicos1 + pibPerCapta1;
@@ -119,8 +119,8 @@ int main() {
     // printf("\nSuper poder Carta 2: %.2f", superPoderCarta2);
     
     //Menu Interativo
-    printf("\n************************MENU************************\n");
-    printf("\nEscolha o atributo que deseja comparar:\n");
+    printf("\n************************ MENU ************************\n");
+    printf("\nEscolha o número do atributo que deseja comparar:\n");
 
     //Lista de atributos para escolha do usuário
     printf("\n1.População");
@@ -131,13 +131,59 @@ int main() {
     
     scanf("%d", &atributoEscolhido);
 
+    printf("\nOs países comparados serão: %s vs %s\n", nomePais1, nomePais2);
+
+    //Exibe atributos país 1
+    printf("\nAtributos do %s", nomePais1);
+    printf("\n---------------------------------------------------------\n");
+
+    printf("\nCarta %s%s: %s", codPais1,numCodPais1,nomePais1);
+    printf("\nPopulação do país: %lu", populacao1);                                   // Exibe a população do país
+    printf("\nÁrea do país: %.2f", area1);                                            // Exibe a área do país
+    printf("\nPIB do país: %.2f", pib1);                                              // Exibe o PIB do país
+    printf("\nNúmero de pontos turísticos do país: %d", numPontosTuristicos1);        // Exibe o numero de pontos turísticos do país
+    printf("\nDensidade Populacional: %.2f hab/km²", densidadePopulacional1);         // Exibe a quantidade de habitantes por km²
+    printf("\nPIB per Capita: %.2f reais", pibPerCapta1);                           // Exibe o PIB per capita do país
+    printf("\nDensidade demográfica: %.2f", densidadePopulacional1);                  // Exibe a Densidade demográfica
+
+    printf("\n---------------------------------------------------------\n");
+
+    //Exibe atributos país 2
+    printf("\nAtributos do %s", nomePais2);
+    printf("\n---------------------------------------------------------\n");
+    printf("\nCarta %s%s: %s", codPais2,numCodPais2,nomePais2);
+    printf("\nPopulação do país: %lu", populacao2);                                   // Exibe a população do país
+    printf("\nÁrea do país: %.2f", area2);                                            // Exibe a área do país
+    printf("\nPIB do país: %.2f", pib2);                                              // Exibe o PIB do país
+    printf("\nNúmero de pontos turísticos do país: %d", numPontosTuristicos2);        // Exibe o numero de pontos turísticos do país
+    printf("\nDensidade Populacional: %.2f hab/km²", densidadePopulacional2);         // Exibe a quantidade de habitantes por km²
+    printf("\nPIB per Capita: %.2f reais", pibPerCapta2);                           // Exibe o PIB per capita do país
+    printf("\nDensidade demográfica: %.2f", densidadePopulacional2);                  // Exibe a Densidade demográfica
+
+    printf("\n---------------------------------------------------------\n");
+
     //Seleção do atributo
     switch (atributoEscolhido)
     {
     case 1:
     // printf("\nentrou 1");
-          strcpy(atributoDeComparacao, "População");    
-        //   printf("\nO atributo foi: %s", atributoDeComparacao);   
+        strcpy(atributoDeComparacao, "População"); 
+        printf("\nO atributo escolhido foi: %s\n", atributoDeComparacao);   
+
+        if (populacao1 > populacao2)
+        {
+            //printf("\nif população 1 >\n");
+            printf("\nA carta do %s venceu!", nomePais1);
+        }
+        else if(populacao1 < populacao2)
+            {
+                        printf("\nif população 2 >\n");
+                printf("\nA carta do  %s venceu!", nomePais2);
+            }
+            else
+            {
+                printf("\nEmpatou!");
+            };  
 
         break;
     case 2:
@@ -167,57 +213,28 @@ int main() {
         break;
     }
     
-    printf("\nOs países comparados são: %s vs %s\n", nomePais1, nomePais2);
-
-    //Exibe atributos país 1
-    printf("\nAtributos %s", nomePais1);
-    printf("\n---------------------------------------------------------\n");
-
-    printf("\nCarta %s%s: %s", codPais1,numCodPais1,nomePais1);
-    printf("\nPopulação do país: %lu", populacao1);                                   // Exibe a população do país
-    printf("\nÁrea do país: %.2f", area1);                                            // Exibe a área do país
-    printf("\nPIB do país: %.2f", pib1);                                              // Exibe o PIB do país
-    printf("\nNúmero de pontos turísticos do país: %d", numPontosTuristicos1);        // Exibe o numero de pontos turísticos do país
-    printf("\nDensidade Populacional: %.2f hab/km²", densidadePopulacional1);         // Exibe a quantidade de habitantes por km²
-    printf("\nPIB per Capita: %.2f reais\n", pibPerCapta1);                           // Exibe o PIB per capita do país
-    printf("\nDensidade demográfica: %.2f", densidadePopulacional1);                       // Exibe a Densidade demográfica
-
-    printf("\n---------------------------------------------------------\n");
-
-    //Exibe atributos país 2
-    printf("\nAtributos %s", nomePais2);
-    printf("\n---------------------------------------------------------\n");
-    printf("\nCarta %s%s: %s", codPais2,numCodPais2,nomePais2);
-    printf("\nPopulação do país: %lu", populacao2);                                   // Exibe a população do país
-    printf("\nÁrea do país: %.2f", area2);                                            // Exibe a área do país
-    printf("\nPIB do país: %.2f", pib2);                                              // Exibe o PIB do país
-    printf("\nNúmero de pontos turísticos do país: %d", numPontosTuristicos2);        // Exibe o numero de pontos turísticos do país
-    printf("\nDensidade Populacional: %.2f hab/km²", densidadePopulacional2);         // Exibe a quantidade de habitantes por km²
-    printf("\nPIB per Capita: %.2f reais\n", pibPerCapta2);                           // Exibe o PIB per capita do país
-    printf("\nDensidade demográfica: %.2f", densidadePopulacional2);                    // Exibe a Densidade demográfica
-
-    printf("\n---------------------------------------------------------\n");
-
-    printf("\nAtributo escolhido foi: %s", atributoDeComparacao);
+    
 
     
-    //Compara atributo escolhido
-    if (atributoEscolhido == 1)
-       printf("\nif atributo escolhido =1\n");
-    {
-        if (populacao1 > populacao2)
-        {
-            printf("\nif população 1 >\n");
-            printf("\nA carta do país %s venceu!", nomePais1);
-        }
-        else if(populacao1 < populacao2){
-                        printf("\nif população 2 >\n");
-                printf("\nA carta do país %s venceu!", nomePais2);
-            }
-            else{
-                printf("\nEmpatou!");
-            };
-    }
+    // //Compara atributo escolhido
+    // if (atributoEscolhido == 1)
+    //    printf("\nif atributo escolhido =1\n");
+    // {
+    //     if (populacao1 > populacao2)
+    //     {
+    //         printf("\nif população 1 >\n");
+    //         printf("\nA carta do país %s venceu!", nomePais1);
+    //     }
+    //     else if(populacao1 < populacao2)
+    //         {
+    //                     printf("\nif população 2 >\n");
+    //             printf("\nA carta do país %s venceu!", nomePais2);
+    //         }
+    //         else
+    //         {
+    //             printf("\nEmpatou!");
+    //         };
+    // }
 
 
     printf("\nFIM\n");
