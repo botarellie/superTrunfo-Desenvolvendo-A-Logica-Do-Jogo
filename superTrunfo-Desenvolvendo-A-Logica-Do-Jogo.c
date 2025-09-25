@@ -177,39 +177,99 @@ int main() {
         }
         else if(populacao1 < populacao2)
             {
-                        printf("\nif população 2 >\n");
-                printf("\nA carta do  %s venceu!", nomePais2);
+                 //       printf("\nif população 2 >\n");
+                printf("\nA carta %s venceu!", nomePais2);
             }
             else
             {
-                printf("\nEmpatou!");
+                printf("\nEmpatou!\n");
             };  
 
         break;
     case 2:
         // printf("\nentrou 2");
-          strcpy(atributoDeComparacao, "Área");
-        //   printf("\nAtributo escolhido foi: %s", atributoDeComparacao);
+        strcpy(atributoDeComparacao, "Área"); 
+        printf("\nO atributo escolhido foi: %s\n", atributoDeComparacao);   
+
+        if (area1 > area2)
+        {
+            //printf("\nif população 1 >\n");
+            printf("\nA carta %s venceu!", nomePais1);
+        }
+        else if(area1 < area2)
+            {
+                //        printf("\nif população 2 >\n");
+                printf("\nA carta %s venceu!", nomePais2);
+            }
+            else
+            {
+                printf("\nEmpatou!\n");
+            };
 
         break;
     case 3:
             // printf("\nentrou 3");
-          strcpy(atributoDeComparacao, "PIB");
-        //   printf("\nAtributo escolhido foi: %s", atributoDeComparacao);
+        strcpy(atributoDeComparacao, "PIB"); 
+        printf("\nO atributo escolhido foi: %s\n", atributoDeComparacao);   
+
+        if (pib1 > pib2)
+        {
+            //printf("\nif população 1 >\n");
+            printf("\nA carta %s venceu!", nomePais1);
+        }
+        else if(pib1 < pib2)
+            {
+                //printf("\nif população 2 >\n");
+                printf("\nA carta %s venceu!", nomePais2);
+            }
+            else
+            {
+                printf("\nEmpatou!\n");
+            };
 
         break;
     case 4:
         // printf("\nentrou 4");
-          strcpy(atributoDeComparacao, "Número de Pontos Turísticos");
-        //   printf("\nAtributo escolhido foi: %s", atributoDeComparacao);
+        strcpy(atributoDeComparacao, "Número de Pontos Turísticos"); 
+        printf("\nO atributo escolhido foi: %s\n", atributoDeComparacao);   
+
+        if (numPontosTuristicos1 > numPontosTuristicos2)
+        {
+            //printf("\nif população 1 >\n");
+            printf("\nA carta %s venceu!", nomePais1);
+        }
+        else if(numPontosTuristicos1 < numPontosTuristicos2)
+            {
+                //printf("\nif população 2 >\n");
+                printf("\nA carta %s venceu!", nomePais2);
+            }
+            else
+            {
+                printf("\nEmpatou!\n");
+            };
 
         break;
     case 5:
         // printf("\nentrou 5");
           strcpy(atributoDeComparacao, "Densidade Demográfica");
-        //   printf("\nAtributo escolhido foi: %s", atributoDeComparacao);
+        printf("\nO atributo escolhido foi: %s\n", atributoDeComparacao);   
+
+        if (densidadePopulacional1 < densidadePopulacional2)
+        {
+            //printf("\nif população 1 >\n");
+            printf("\nA carta %s venceu!", nomePais1);
+        }
+        else if(densidadePopulacional1 > densidadePopulacional2)
+            {
+                //printf("\nif população 2 >\n");
+                printf("\nA carta %s venceu!", nomePais2);
+            }
+            else
+            {
+                printf("\nEmpatou!\n");
+            };
         break;
-    default: printf("\nOpção inválida!");
+    default: printf("\nOpção inválida!\n");
         break;
     }
     
