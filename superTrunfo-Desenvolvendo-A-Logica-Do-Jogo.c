@@ -31,14 +31,6 @@ int main() {
     float densidadePopulacional2;// Número de habitantes por km² 
     float pibPerCapta2;           //Calcula PIB per capta da Pais
 
-    // Declaração de variáveis de resultado da comparação das cartas
-    // int resultPopulacao;
-    // int resultArea;
-    // int resultPib;
-    // int resultPontosTur;
-    // int resultdensidadePop;
-    // int resultPibPerCap;
-
     // Declaração de variável atributo de comparação
     int atributoEscolhido;
     char atributoDeComparacao[30];
